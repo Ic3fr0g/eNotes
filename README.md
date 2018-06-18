@@ -1,6 +1,6 @@
 # eNotes
 
-This repository contains notes that I've written over my academic journey.
+This repository contains notes that I've written over my academic journey. Best viewed on [Typora](https://typora.io/) or any other markdown viewer.
 
 ## Table of Contents
 
@@ -10,7 +10,7 @@ This repository contains notes that I've written over my academic journey.
 - [ ] ML System Design
 - [ ] SVM
 - [ ] Clustering
-  - [ ] K-means
+  - [x] [K-means](./Clustering/K-means.md)
 - [ ] Dimensionality Reduction
   - [ ] PCA
 - [ ] Anomaly Detection
