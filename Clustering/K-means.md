@@ -74,4 +74,7 @@ There are many ways to randomly initialise $\mathbb{K}$ cluster centroids, but o
 
 - Sometimes it is ambiguous as to how many clusters exist in the dataset and in such cases it’s more useful to choose the number of clusters on the basis of the end goal.
 
+## TODO
 
+- Link to Voronoi Cells
+- Link to example
