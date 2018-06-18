@@ -2,7 +2,7 @@
 
 > **Principal component analysis** (**PCA**) is a statistical procedure that uses an [orthogonal transformation](https://en.wikipedia.org/wiki/Orthogonal_transformation) to convert a set of observations of possibly correlated variablesinto a set of values of [linearly uncorrelated](https://en.wikipedia.org/wiki/Correlation_and_dependence) variables called **principal components**. If there are ${\displaystyle m}$ observations with ${\displaystyle n}$ variables, then the number of distinct principal components is ${\displaystyle \min(m-1, n)}$ . This transformation is defined in such a way that the first principal component has the largest possible [variance](https://en.wikipedia.org/wiki/Variance)(that is, accounts for as much of the variability in the data as possible), and each succeeding component in turn has the highest variance possible under the constraint that it is [orthogonal](https://en.wikipedia.org/wiki/Orthogonal) to the preceding components. The resulting vectors are an uncorrelated [orthogonal basis set](https://en.wikipedia.org/wiki/Orthogonal_basis_set). PCA is sensitive to the relative scaling of the original variables.
 
-![pcaViz](../images/pcaViz.jpg)
+![pcaViz](../../images/pcaViz.jpg)
 
 
 ## Objective
@@ -81,6 +81,7 @@
 
 
 
+
 ## Reconstruction from Compressed Representation
 
 - To get the original $x^{(i)}$,
@@ -91,12 +92,14 @@
 
 
 
+
 ## Cost Function
 
 - Average squared projection error,
   $$
   \frac{1}{m}\sum_{i=1}^m\lVert x^{(i)} - x_{approx}^{(i)} \rVert^2
   $$
+
 
 
 
@@ -147,6 +150,7 @@
   &\} \\
   \end{align}
   $$
+
 
 
 ## Advice for Applying PCA

@@ -4,19 +4,20 @@ This repository contains notes that I've written over my academic journey with a
 
 ## Table of Contents
 
-- [ ] Linear Regression
-- [ ] Logistic Regression
-- [ ] Neural Networks
-- [ ] ML System Design
-- [ ] SVM
-- [ ] Clustering
-  - [x] [K-means](./Clustering/K-means.md)
-- [ ] Dimensionality Reduction
-  - [x] [PCA](./Dimensionality Reduction/PCA.md)
-- [ ] Anomaly Detection
-- [ ] Recommender Systems
-- [ ] Large Scale ML
-- [ ] Mathematical Concepts
-  - [ ] Matrices and Linear Algebra
+- Machine Learning
+  - Linear Regression
+  - Logistic Regression
+  - Neural Networks
+  - ML System Design
+  - SVM
+  - Clustering
+    - [x] [K-means](./Machine-learning/Clustering/K-means.md)
+  - Dimensionality Reduction
+    - [x] [PCA](./Machine-learning/Dimensionality-reduction/PCA.md)
+  - Anomaly Detection
+  - Recommender Systems
+  - Large Scale ML
+- Mathematical Concepts
+  - Matrices and Linear Algebra
     - [ ] SVD
 

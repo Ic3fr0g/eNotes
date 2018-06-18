@@ -2,7 +2,7 @@
 
 > **K-means clustering** is a method of [vector quantization](https://en.wikipedia.org/wiki/Vector_quantization), originally from [signal processing](https://en.wikipedia.org/wiki/Signal_processing), that is popular for [cluster analysis](https://en.wikipedia.org/wiki/Cluster_analysis) in [data mining](https://en.wikipedia.org/wiki/Data_mining). *k*-means clustering aims to [partition](https://en.wikipedia.org/wiki/Partition_of_a_set) *n* observations into *k* clusters in which each observation belongs to the cluster with the nearest [mean](https://en.wikipedia.org/wiki/Mean), serving as a prototype of the cluster. This results in a partitioning of the data space into [Voronoi cells](https://en.wikipedia.org/wiki/Voronoi_cell).
 
-![k-means viz](../images/kmeansViz.png)
+![k-means viz](../../images/kmeansViz.png)
 
 ## Input
 
@@ -63,14 +63,14 @@ $$
 
 There are many ways to randomly initialise $\mathbb{K}$ cluster centroids, but one important thing to note is that $\mathbb{K} < m$. The recommended way is to pick $\mathbb{K}$ training examples and assign them to $\{\mu_1, \cdots, \mu_k\}$ . Depending on the initialisations of the clusters, we can end up at different solutions. Typically, we repeat the k-means algorithm 50-1000 times and select the clustering that minimises $J(c^{(1)}), \cdots, c^{(m)}, \mu_1,\cdots,\mu_k)$ . For 2-10 clusters performing random initialisation results in a serious increase in performance and accuracy but decreases if there are more clusters in the data. The following figure illustrates a case where the random initialisation converges to a bad local optima. 
 
-![k-means-convergence](../images/kmeansConvergenceToALocalMinimum.png)
+![k-means-convergence](../../images/kmeansConvergenceToALocalMinimum.png)
 
 ## Choosing the number of Clusters
 
 - Manually visualize the data. 
 - **Elbow Method**
   - On plotting the distortion as a function of number of clusters, $\mathbb{K}$, this methods says that the optimal number of clusters at the point the elbow occurs as can be seen for line B in the plot below. It is a reasonable way of choosing the number of clusters. But this method does not always work because the sometimes the plot would look like line A which does not have clear elbow to choose.
-  - ![ElbowMethod](../images/kmeansElbowMethod.png)
+  - ![ElbowMethod](../../images/kmeansElbowMethod.png)
 
 - Sometimes it is ambiguous as to how many clusters exist in the dataset and in such cases it’s more useful to choose the number of clusters on the basis of the end goal.
 
