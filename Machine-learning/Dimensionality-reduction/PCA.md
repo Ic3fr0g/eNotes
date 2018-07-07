@@ -82,6 +82,7 @@
 
 
 
+
 ## Reconstruction from Compressed Representation
 
 - To get the original $x^{(i)}$,
@@ -93,12 +94,14 @@
 
 
 
+
 ## Cost Function
 
 - Average squared projection error,
   $$
   \frac{1}{m}\sum_{i=1}^m\lVert x^{(i)} - x_{approx}^{(i)} \rVert^2
   $$
+
 
 
 
@@ -153,6 +156,7 @@
 
 
 
+
 ## Advice for Applying PCA
 
 - Supervised learning speedup
@@ -175,9 +179,9 @@
 
   - $k = 2 \text{ or } 3$
 
-- > **DO NOT USE PCA to reduce overfitting go for regularisation instead**.  The reason it works well in some cases is because it reduces the number of features and hence reduces the variance and increases the bias.It is generally adviced against because PCA removes some information without keeping into consideration the target values. While this might work when 99% of the variance is retained, it may as well on various occasions lead to the loss of some useful information. On the other hand, regularization parameters are more optimal for preventing overfitting because while penalizing overfitting they also keep in context the values of the target vector.
+- > ==DO NOT USE PCA to reduce overfitting go for regularisation instead==.  The reason it works well in some cases is because it reduces the number of features and hence reduces the variance and increases the bias.It is generally adviced against because PCA removes some information without keeping into consideration the target values. While this might work when 99% of the variance is retained, it may as well on various occasions lead to the loss of some useful information. On the other hand, regularization parameters are more optimal for preventing overfitting because while penalizing overfitting they also keep in context the values of the target vector.
 
-- **Try running models without using PCA first.**
+- ==Try running models without using PCA first.==
 
 
 

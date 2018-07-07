@@ -57,7 +57,7 @@ $$
 \end{align}
 $$
 
-> The cost function vs. no of iterations for k-means is **always** monotonically decreasing
+> The cost function vs. no of iterations for k-means is ==always== monotonically decreasing
 
 ## Random Initialisation
 
