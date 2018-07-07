@@ -43,7 +43,7 @@ $$
 
   - Here's what the function looks like,
 
-     ![sigmoidfn](/Users/ic3fr0g/Mayur/Restricted/PersonalProjects/eNotes/images/sigmoidfn.png)
+     ![sigmoidfn](../../images/sigmoidfn.png)
 
 > The equation, $\hat{y} = w^Tx + b$, corresponds to Linear Regression. We apply the non-linearity to this function to 
 >
@@ -67,7 +67,7 @@ $$
 
   - Here's an image that helps illustrate the two points above, 
 
-     ![logrLoss](/Users/ic3fr0g/Mayur/Restricted/PersonalProjects/eNotes/images/logrLoss.jpeg)
+     ![logrLoss](../../images/logrLoss.jpeg)
 
 - Cost of LogR is given by
 
@@ -87,7 +87,7 @@ $$
 
 - Here's an illustration where the $z$ axis represents the convex cost function $J(w,b)$ and the red dot denotes the local minima
 
-  ![logrGD](/Users/ic3fr0g/Mayur/Restricted/PersonalProjects/eNotes/images/logrGD.png)
+  ![logrGD](../../images/logrGD.png)
 
 - The formula for GD is given by,
 
