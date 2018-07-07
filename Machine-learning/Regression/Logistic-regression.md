@@ -82,6 +82,52 @@ $$
 
   - Cost fn is computed over all the training examples
 
+#### Explanation
+
+- The idea of  LogR is to predict for some $\hat{y} = \mathrm{P}(y=1\mid x)$
+
+- That can be re-written as,
+
+  - $$
+    \mathrm{P}(y \mid x) = \begin{cases}
+    \text{If} \quad y=1: \quad p(y \mid x) = \hat{y} \\
+    \text{If} \quad y=0: \quad p(y \mid x) = 1 - \hat{y} \\
+    \end{cases} \\
+    \text{or} \\
+    \mathrm{P}(y \mid x) = \hat{y}^y(1- \hat{y})^{(1-y)}
+    $$
+
+- Now since $\log$ is a strictly monotonically increasing fn, maximising $\log{\mathrm{P}(y \mid x)}$ should give you a similar result as maximising $\mathrm{P}(y \mid x)$
+
+  - $$
+    \begin{align}
+    \log{\mathrm{P}(y \mid x)} &= \log{(\hat{y}^y(1- \hat{y})^{(1-y)})} \\
+    &= y \log{(\hat{y})} + (1-y) \log{(1-\hat{y})}\\
+    &= -L(\hat{y}, y)
+    \end{align}
+    $$
+
+  - The negative sign exists as we would like to maximise the probability of a class which implies decreasing the loss defined as $L(\hat{y}, y)$ 
+
+- Cost on $m$ examples is calculated by assuming that the training examples are drawn independently so that $p(\text{labels in training}) = \Pi_{I=1}^m p(y^{(i)} \mid x^{(i)})$ so,
+
+  - $$
+    \begin{align}
+    \log{p(\cdots)} &= \log{\Pi_{I=1}^m p(y^{(i)} \mid x^{(i)})} \\
+    &= \Sigma_{i=1}^m \log{p(y^{(i)} \mid x^{(i)})} \\
+    &= - \Sigma_{i=1}^m L(\hat{y}^{(i)}, y^{(i)}) \label{eq14}\\
+    \end{align}
+    $$
+
+  - According to maximum likelihood estimation we try to get the parameters that will maximise the expression in $\eqref{eq14}$, which is equivalent to saying (scaled by a factor of $m$),
+
+  - $$
+    \text{Minimise Cost : } J(w,b) = \frac{1}{m}\space\Sigma_{i=1}^mL(\hat{y}^{(i)},y^{(i)})
+    $$
+
+
+
+
 ## Gradient Descent
 
 - GD for LogR helps us find $w$ and $b$ such that the $J(w,b)$ cost minimises
