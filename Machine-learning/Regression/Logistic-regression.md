@@ -23,6 +23,7 @@
   $$
 
 
+
 ## Problem Formulation
 
 - Given $x$ we would like to predict $\hat{y} = \mathrm{P}(y=1\mid x)$ such that $\hat{y}^{(i)} \approx y^{(i)}$ for all training examples $i$. Which we define as the probability of $y$ being correctly classified (i.e, $y=1$) given some  training example $x$
@@ -101,15 +102,6 @@ $$
     $$
 
 
-
-
-
-
-
-
-
-
-
 #### Computational Graph and Derivatives
 
 - Our problem for LogR is defined by 3 major equations, 
@@ -167,7 +159,7 @@ $$
     w2 -= alpha.dw2
     b -= alpha.db
     ```
-####GD on $m$ examples
+#### GD on $m$ examples
 
 - From $\eqref{eq5}$ we have and multiple training examples we calculate `dw1`,
 
