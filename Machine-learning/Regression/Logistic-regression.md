@@ -171,7 +171,7 @@ $$
   - So the computation graph with the derivatives looks as follows,
 
   - $$
-    \boxed{z = w^Tx} \xleftarrow{\color{red}{dz = a - y}} \boxed{a = \sigma(z)} \xleftarrow{\color{red}{da =  -\frac{y}{a} + \frac{1-y}{1-a}}} \boxed{L(a,y)}
+    \boxed{z = w^Tx} \color{red}{\xleftarrow{dz = a - y}} \boxed{a = \sigma(z)} \color{red}{\xleftarrow{da =  -\frac{y}{a} + \frac{1-y}{1-a}}} \boxed{L(a,y)}
     $$
 
   - This is obtained through the chain rule,
