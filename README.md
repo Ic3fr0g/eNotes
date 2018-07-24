@@ -17,6 +17,7 @@ Clone the repository using `git clone https://github.com/Ic3fr0g/eNotes.git` and
     - [ ] Linear Regression
     - [x] [Logistic Regression](./Machine-learning/Regression/Logistic-regression.md)
   - Neural Networks
+    - [x] Neural Networks
   - ML System Design
   - SVM
   - Clustering
